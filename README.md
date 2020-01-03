@@ -4,6 +4,8 @@ Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v
 
 RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master?urlpath=rstudio)
 
+**DO NOT DELETE** Notes container herein and commit messages will be useful if official `runtime` method breaks again. **DO NOT DELETE**
+
 
 ----
 
@@ -15,7 +17,7 @@ Based on Titus Brown's [repo](https://github.com/ngs-docs/2020-ggg-298-first-day
 
 ### Known Issues:
 
-- Doesn't offer RShiny dashboards (as far as I can tell; at least not simply by changing the URL to match that of the [official R example](https://github.com/binder-examples/r), but [here](https://github.com/rocker-org/binder/issues/14) suggests it may be possible to activate it(?).). So won't address @aciobanusebi's request, see [here](https://discourse.jupyter.org/t/cannot-get-r-project-working/2917/11?u=fomightez).
+- Doesn't offer RShiny dashboards (as far as I can tell; at least not simply by changing the URL to match that of the [official R example](https://github.com/binder-examples/r), but [here](https://github.com/rocker-org/binder/issues/14) suggests it may be possible to activate it via the Dockerfile(?) in combination with a special URL.). So won't address @aciobanusebi's request, see [here](https://discourse.jupyter.org/t/cannot-get-r-project-working/2917/11?u=fomightez).
 
 - For some reason you need to call salmon with `/opt/conda/bin/salmon` despite putting that directory on the path in the Dockerfile.   *More on this:* Although conda now allows installs after giving permissions to NB_USER so that conda might work later like at https://github.com/karthik/binder-test/blob/master/.binder/Dockerfile (<---putting in Dockerfile later like that works but gave me the idea that with permissions set it may allow `conda install` to work after launch too), for some reason you need to call salmon with `/opt/conda/bin/salmon` despite putting that directory on the path in the Dockerfile. (Other items work in `/opt/conda/bin` without full path and even when I was installing under root or NB_USER directly in Dockerfile, I could see installation worked but couldn't use without full path(?).)
 
