@@ -23,6 +23,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.11-Linux-x86
 
 WORKDIR ${HOME}
 RUN conda install -c bioconda -y salmon
+ENV PATH /opt/conda/bin:$PATH
 
 # Copy repo into ${HOME}, make user own $HOME
 USER root
