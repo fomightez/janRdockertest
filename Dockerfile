@@ -2,7 +2,7 @@ FROM rocker/binder:3.6.0
 
 # add conda and other needed utilities based on https://hub.docker.com/r/continuumio/miniconda3/dockerfile and 
 # https://hub.docker.com/r/rocker/binder/dockerfile
-WORKDIR ${HOME}
+USER root
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PATH /opt/conda/bin:$PATH
 
