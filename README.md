@@ -4,7 +4,7 @@ Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v
 
 RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master?urlpath=rstudio)
 
-**DO NOT DELETE** Notes container herein and commit messages will be useful if official `runtime` method breaks again. **DO NOT DELETE**
+**DO NOT DELETE** Notes herein & commit messages will be useful if official method breaks again. **DO NOT DELETE**
 
 
 ----
