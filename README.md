@@ -17,6 +17,8 @@ Based on Titus Brown's [repo](https://github.com/ngs-docs/2020-ggg-298-first-day
 
 - Doesn't offer RShiny dashboards (as far as I can tell; at least not via the URL that the [official R example](https://github.com/binder-examples/r) suggests). So won't address @aciobanusebi's request, see [here](https://discourse.jupyter.org/t/cannot-get-r-project-working/2917/11?u=fomightez).
 
+- conda not allowing installs after launch (How does https://github.com/binder-examples/r allow this to work?)
+
 ----
 
 Launch directly into basic Jupyter interface: [![Binder](https://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master) <--- Probably not what you want unless trouble-shooting. See badges at top.
