@@ -19,6 +19,17 @@ Based on Titus Brown's [repo](https://github.com/ngs-docs/2020-ggg-298-first-day
 
 - conda not allowing installs after launch (How does https://github.com/binder-examples/r allow this to work?)
 
+- I had to put the salmon installation by conda in the Dockerfile. 
+
+- And for some reason you need to call salmon with /opt/conda/bin/salmon despite putting that directory on the path in the Dockerfile. (Maybe fails because I didn't set NB_USER to own that too?)
+
+--- 
+
+Other suggestions for work-around
+---------------------------------
+
+Chris Holdgraf thought that [Hole punch](https://github.com/karthik/holepunch) generated approaches should work as well (that seems to generate a Dockerfile)
+
 ----
 
 Launch directly into basic Jupyter interface: [![Binder](https://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master) <--- Probably not what you want unless trouble-shooting. See badges at top.
