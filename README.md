@@ -1,6 +1,6 @@
 # RStudio in Binder using a Dockerfile
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master)
 
 ***NOTE**: RStudio/R support is now supported natively in Binder. See the
 [R example repository](https://github.com/binder-examples/r) for how to
