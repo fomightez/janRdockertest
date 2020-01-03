@@ -21,15 +21,14 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.11-Linux-x86
     echo "conda activate base" >> ~/.bashrc
     
 
-WORKDIR ${HOME}
-RUN conda install -c bioconda -y salmon
-ENV PATH /opt/conda/bin:$PATH
-
 # Copy repo into ${HOME}, make user own $HOME
 USER root
 COPY . ${HOME}
 RUN chown -R ${NB_USER} ${HOME}
 USER ${NB_USER}
+
+ENV PATH /opt/conda/bin:$PATH
+RUN conda install -c bioconda -y salmon
 
 ## run any install.R script we find
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
