@@ -1,11 +1,14 @@
 FROM rocker/binder:3.6.0
 
-# add conda and other needed utilities based on https://hub.docker.com/r/continuumio/miniconda3/dockerfile
+# add conda and other needed utilities based on https://hub.docker.com/r/continuumio/miniconda3/dockerfile and 
+# https://hub.docker.com/r/rocker/binder/dockerfile
+WORKDIR ${HOME}
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PATH /opt/conda/bin:$PATH
 
-RUN apt-get update --fix-missing && \
+RUN apt-get update && \
     apt-get install -y wget gunzip bzip2 ca-certificates curl git && \
+    apt-get purge && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
