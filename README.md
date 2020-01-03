@@ -1,21 +1,17 @@
-# RStudio in Binder using a Dockerfile
+# R kernel notebooks and RStudio in Binder using a Dockerfile
 
-[![Binder](https://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master)
+Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master?filepath=index.ipynb)
 
-***NOTE**: RStudio/R support is now supported natively in Binder. See the
-[R example repository](https://github.com/binder-examples/r) for how to
-create an RStudio session using `runtime.txt`.*
+RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master?urlpath=rstudio)
 
-This is a proof-of-concept to deploy a Binder that exposes the
-RStudio UI instead of a Jupyter Notebook. It also installs
-several packages from the tidyverse, and includes a demo
-script to show off functionality.
+RShiny: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master?urlpath=shiny/bus-dashboard/)
 
-To start your RStudio session, click on "new" in the top right,
-and at the bottom will be `RStudio Session`.
-Click that and your RStudio session will begin momentarily!
+----
 
-See `instructions.ipynb` for more details.
+Currently testing making a repo that builds via the public Binder federation as the recommended approach [here, entitled 'Using R with Jupyter / RStudio on Binder'](https://github.com/binder-examples/r) is currently not building properly. Issues discussed [here](https://discourse.jupyter.org/t/question-about-voila-binder/2981), [here](https://github.com/jupyterhub/mybinder.org-deploy/issues/1308), and [here](https://github.com/jupyter/repo2docker/pull/830)
 
-*Special thanks to Ryan Lovett (@ryanlovett) for figuring out
-RStudio support with JupyterHub*
+Based on Titus Brown's [repo](https://github.com/ngs-docs/2020-ggg-298-first-day-rnaseq) at present.
+
+----
+
+Launch directly into basic Jupyter interface: [![Binder](https://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master) <--- Probably not what you want unless trouble-shooting. See badges at top.
