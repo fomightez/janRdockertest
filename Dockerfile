@@ -25,7 +25,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.11-Linux-x86
 USER root
 COPY . ${HOME}
 RUN chown -R ${NB_USER} ${HOME}
-RUN chown -R ${NB_USER} /opt/conda/bin
+RUN chown -R ${NB_USER} /opt/conda
 USER ${NB_USER}
 
 ENV PATH /opt/conda/bin:$PATH
