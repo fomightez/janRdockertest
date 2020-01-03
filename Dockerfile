@@ -29,7 +29,7 @@ RUN chown -R ${NB_USER} /opt/conda
 USER ${NB_USER}
 
 ENV PATH /opt/conda/bin:$PATH
-RUN conda install -c bioconda -y salmon
+# RUN conda install -c bioconda -y salmon #seems adding `RUN chown -R ${NB_USER} /opt/conda` made it so conda installs work in terminal but oddly salmon still not on path; note that it wasn't on path when this was active in Dockerfile either
 
 ## run any install.R script we find
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
