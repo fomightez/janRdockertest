@@ -1,3 +1,5 @@
+**DO NOT DELETE** Notes herein & commit messages will be useful if official method breaks again. **DO NOT DELETE**
+
 # R kernel notebooks and RStudio in Binder using a Dockerfile
 
 Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/fomightez/janRdockertest/master?filepath=index.ipynb)
